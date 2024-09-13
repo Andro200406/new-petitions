@@ -1,6 +1,6 @@
-/* Global styles */
+/* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f7f6;
@@ -31,11 +31,11 @@ nav {
 
 .nav-links {
     list-style: none;
+    display: flex;
 }
 
 .nav-links li {
-    display: inline-block;
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .nav-links a {
@@ -50,6 +50,73 @@ nav {
     color: #f0a500;
 }
 
+/* Welcome Page Styles */
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #4a90e2, #9013fe);
+    text-align: center;
+    color: white;
+}
+
+.welcome-buttons .btn {
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #4a90e2;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.welcome-buttons .btn:hover {
+    background-color: #ececec;
+}
+
+/* Form Container Styles */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button.btn:hover {
+    background-color: #357ab8;
+}
+
+/* General Styles */
 .section {
     padding: 100px 50px;
     text-align: center;
@@ -148,7 +215,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Petition form styling */
+/* Petition Form Styling */
 .petition {
     background-color: #f4f7f6;
     padding: 50px 20px;
@@ -208,7 +275,6 @@ footer {
     color: #28a745;
 }
 
-
 .container_1 {
     background-color: #86e6ca;
     border-radius: 12px;
@@ -217,7 +283,8 @@ footer {
     width: 550px;
     height: 650px;
     max-width: 100%;
-    margin-left: 460px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -275,6 +342,8 @@ button:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
 }
+
+/* Media Queries */
 @media (max-width: 480px) {
     .container_1 {
         width: 100%;
